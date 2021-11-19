@@ -10,7 +10,7 @@ In our application of RD to the Framingham teaching dataset, we seek to estimate
 
 Variable | Description | Type of variable 
 --- | --- | --- 
-SYSBP | Systolic Blood Pressure (mean of last two of three measurements) (mmHg) | Running variable
-CVD | Cardiovascular Disease in followup period (0 = No, 1 = Yes) | Outcome variable 
-BPMEDS | Use of Anti-hypertensive medication at exam (0 = No, 1 = Yes) | Treatment status variable
-AGE | Age at exam (years) | Used to assess covariate balance
+CVD | Cardiovascular Disease in follow-up period (0 = No, 1 = Yes) | Outcome variable (Y)
+SYSBP | Systolic Blood Pressure (mmHg) | Running variable (X)
+BPMEDS | Use of Anti-hypertensive medication at exam (0 = No, 1 = Yes) | Treatment status variable (D)
+AGE | Age at exam (years) | Variable at baseline used to assess covariate balance
