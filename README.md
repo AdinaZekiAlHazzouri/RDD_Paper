@@ -1,4 +1,4 @@
-## Overview And Steps to Conduct A Regression Discontinuity Analysis
+## Overview And Steps to Conduct a Regression Discontinuity Analysis
 
 This repository contains R code which can be used and followed along in the Appendix section of our paper titled, "Regression Discontinuity Design - A Practical Guide." The teaching/redacted dataset used for this application is based on the Framingham Heart Study and is available upon request via BioLINCC at https://biolincc.nhlbi.nih.gov/teaching/
 
