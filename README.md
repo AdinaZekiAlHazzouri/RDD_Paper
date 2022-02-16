@@ -1,4 +1,4 @@
-## Overview and Steps to Conduct a Regression Discontinuity Analysis
+## Overview of Steps and Practice Application to Conduct a Regression Discontinuity Analysis
 
 This repository contains a walkthrough of an RD application which is connected with our paper, "Regression Discontinuity Design in the Health and Medical Sciences: A Useful Tool in the Absence of Randomized Data." We include among the enclosed documents an Apppendix ("Appendix Methods: RD Application, Methods and Results.docx"), which contains the entire walkthrough of our application, as well as an R file ("RDD-paper-code.R"), containing just the code to run this application. The teaching/redacted dataset used for this application is based on the Framingham Heart Study and is available upon request via BioLINCC at https://biolincc.nhlbi.nih.gov/teaching/
 
