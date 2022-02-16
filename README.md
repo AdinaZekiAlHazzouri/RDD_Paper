@@ -3,8 +3,8 @@
 This repository contains a walkthrough of an RD application which is connected with our paper, "Regression Discontinuity Design in the Health and Medical Sciences: A Useful Tool in the Absence of Randomized Data." We include on this page the below enclosed documents: 
 File Name | Description |  
 --- | --- 
-Appendix Methods: RD Application, Methods and Results.docx" | This document contains the entire walkthrough of our application, including the steps for conducting an RD analysis, an overview of our application, embedded R code, and a summary of the output and results.
-"RDD-paper-code.R" | This document contains just the R code required to implement this practice application.
+*Appendix Methods: RD Application, Methods and Results.docx* | This document contains the entire walkthrough of our application, including the steps for conducting an RD analysis, an overview of our application, embedded R code, and a summary of the output and results.
+*RDD-paper-code.R* | This document contains just the R code required to implement this practice application.
 
 The teaching/redacted dataset used for this application is based on the Framingham Heart Study and is available upon request via BioLINCC at https://biolincc.nhlbi.nih.gov/teaching/ . Please note that this particular dataset is intended for instructional purposes only, and therefore analyses performed on it should NOT be used for reporting results in a publication.
 
