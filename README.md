@@ -14,3 +14,6 @@ CVD | Cardiovascular Disease in follow-up period (0 = No, 1 = Yes) | Outcome var
 SYSBP | Systolic Blood Pressure (mmHg) | Running variable (X)
 BPMEDS | Use of Anti-hypertensive medication at exam (0 = No, 1 = Yes) | Treatment status variable (D)
 AGE | Age at exam (years) | Variable at baseline used to assess covariate balance
+
+
+The entire walkthrough of this application can be found in the enclosed document, "Appendix Methods: RD Application, Methods and Results.docx." In addition, the physical R code for running this application can be found in the file, "RDD-paper-code.R"
