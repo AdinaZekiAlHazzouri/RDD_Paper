@@ -1,6 +1,6 @@
 ## Overview of Steps and Application of Regression Discontinuity Analysis
 
-This repository contains a walkthrough of an RD application which is connected with our paper, "Regression Discontinuity Design in the Health and Medical Sciences: A Useful Tool in the Absence of Randomized Data." We include on this page the below enclosed documents: 
+This repository contains a walkthrough of an RD application which is connected with our paper, "Regression Discontinuity Design in the Health and Medical Sciences: A Useful Tool in the Absence of Randomized Data." The below documents are provided in this repository: 
 File Name | Description |  
 --- | --- 
 *Appendix Methods: RD Application, Methods and Results.docx* | This document contains the entire walkthrough of our application, including the steps for conducting an RD analysis, an overview of our application, embedded R code, and a summary of the output and results.
