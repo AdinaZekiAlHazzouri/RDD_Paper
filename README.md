@@ -1,6 +1,8 @@
 ## Overview and Steps to Conduct a Regression Discontinuity Analysis
 
-This repository contains R code which can be used and followed along in the Appendix section of our paper titled, "Regression Discontinuity Design in the Health and Medical Sciences: A Useful Tool in the Absence of Randomized Data." The teaching/redacted dataset used for this application is based on the Framingham Heart Study and is available upon request via BioLINCC at https://biolincc.nhlbi.nih.gov/teaching/
+This GitHub page contains a walkthrough of an RD application which is connected with our paper, "Regression Discontinuity Design in the Health and Medical Sciences: A Useful Tool in the Absence of Randomized Data." 
+
+This repository contains an Apppendix ("Appendix Methods: RD Application, Methods and Results.docx"), which contains the entire walkthrough of our application, as well as an R file ("RDD-paper-code.R"), containing just the code to run this application. The teaching/redacted dataset used for this application is based on the Framingham Heart Study and is available upon request via BioLINCC at https://biolincc.nhlbi.nih.gov/teaching/
 
 Please note that this particular dataset is intended for instructional purposes only, and therefore analyses performed on it should NOT be used for reporting results in a publication.
 
@@ -14,6 +16,3 @@ CVD | Cardiovascular Disease in follow-up period (0 = No, 1 = Yes) | Outcome var
 SYSBP | Systolic Blood Pressure (mmHg) | Running variable (X)
 BPMEDS | Use of Anti-hypertensive medication at exam (0 = No, 1 = Yes) | Treatment status variable (D)
 AGE | Age at exam (years) | Variable at baseline used to assess covariate balance
-
-
-The entire walkthrough of this application can be found in the enclosed document, "Appendix Methods: RD Application, Methods and Results.docx." In addition, the physical R code for running this application can be found in the file, "RDD-paper-code.R"
