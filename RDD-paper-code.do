@@ -7,7 +7,7 @@
 ** TO INSTALL/DOWNLOAD R PACKAGES:
 ** RDROBUST (estimation and inference):  net install rdrobust, from(https://raw.githubusercontent.com/rdpackages/rdrobust/master/stata) replace
 ** RDDENSITY (validation test):          net install rddensity, from(https://raw.githubusercontent.com/rdpackages/rddensity/master/stata) replace
-********************************************************************************
+**********************************************************************************************************
 clear all
 
 
