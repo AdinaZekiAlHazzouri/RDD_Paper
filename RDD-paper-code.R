@@ -2,7 +2,7 @@
 ## BMJ
 ## RD example code in R for "Regression Discontinuity Design studies: A guide for health researchers"
 ## Authors: Sebastian Calonico, Neal Jawadekar, Katrina Kezios, Adina Zeki Al Hazzouri
-## Last update: April 11, 2023
+## Last update: April 13, 2023
 ######################################################################################################
 ## TO INSTALL/DOWNLOAD R PACKAGES:
 ## RDROBUST (estimation and inference):  install.packages('rdrobust')
@@ -143,7 +143,12 @@ RD_sharp$Estimate[1] # Sharp RDD effect = -0.005580354
 # Next, assess compliance by computing RD effect using D as the outcome
 RD_comp = rdrobust(y = D, x = X, c = C, h = RD_fuzzy$bws[1], b = RD_fuzzy$bws[2,1])
 summary(RD_comp) 
+
 RD_comp$Estimate[1] # Compliance RDD effect = 0.02424286
+RD_comp$beta_p_r[1] # Treatment Take-up for Treatment Group = 0.08062456
+RD_comp$beta_p_l[1] # Treatment Take-up for Control Group = 0.0563817
+
+
 RD_comp_plot = rdplot(y = D, x = X, c = C, h = RD_fuzzy$bws[1,1], p=1, 
                       x.label = "Systolic Blood Pressure (mmHg)", 
                       y.label = "Use of anti-hypertensive medication", col.dots="lightsteelblue3",col.lines="mediumorchid4")
