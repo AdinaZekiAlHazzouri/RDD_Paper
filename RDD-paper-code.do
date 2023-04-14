@@ -2,19 +2,19 @@
 ** BMJ
 ** RD example code in Stata for "Regression Discontinuity Design studies: A guide for health researchers"
 ** Authors: Sebastian Calonico, Neal Jawadekar, Katrina Kezios, Adina Zeki Al Hazzouri
-** Last update: April 11, 2023
+** Last update: April 14, 2023
 **********************************************************************************************************
 ** TO INSTALL/DOWNLOAD R PACKAGES:
 ** RDROBUST (estimation and inference):  net install rdrobust, from(https://raw.githubusercontent.com/rdpackages/rdrobust/master/stata) replace
 ** RDDENSITY (validation test):          net install rddensity, from(https://raw.githubusercontent.com/rdpackages/rddensity/master/stata) replace
-**********************************************************************************************************
+********************************************************************************
 clear all
 
 
 *** Load dataset
 cd "INSERT DIRECTORY HERE" /* Put location of your working directory here */
 use "frmgham2.dta"
-keep if !missing(cvd, sysbp, bpmeds) /* For illustrative purposes, and to keep samples consistent between Sharp RD and Fuzzy RD models, we will limit our sample  
+keep if !missing(cvd, sysbp, bpmeds) /* For illustrative purposes, and to keep samples consistent between Sharp RD and Fuzzy RD models, we will limit our sample  */
                                      /* to individuals with a non-missing value of the outcome variable, running variable, and actual treatment take-up indicator. */
 
 **********************************************************************************************************
@@ -109,11 +109,14 @@ rdplot age $X, c($C) ///
 **** Step 7: Fuzzy RD: average effect for compliers ******************************************************
 **********************************************************************************************************
 
-* First, assess compliance by computing RD effect using D as the outcome
-
+* First, assess compliance by computing RD effect using D as the outcome (first stage)
 rdrobust $D $X, c($C)
 
-rdplot $D $X, c($C) ///
+disp "Treatment take-up for the treatment group: " e(tau_cl_r)
+disp "Treatment take-up for the control group: " e(tau_cl_l)
+disp "Compliance rate: " e(tau_cl_r)-e(tau_cl_l)
+
+rdplot $D $X, c($C) p(1) ///
 					 graph_options(title("First Stage") ///
                      ytitle(Use of anti-hypertensive medication) ///
                      xtitle(Systolic Blood Pressure (mmHg)) ///
